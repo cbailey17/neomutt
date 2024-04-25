@@ -1,7 +1,7 @@
 # vim: filetype=muttrc
 
 source ~/.config/neomutt/settings
-# source ~/.config/neomutt/colors
+source ~/.config/neomutt/colors
 source ~/.config/neomutt/mappings
 
 # Accounts

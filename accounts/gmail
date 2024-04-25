@@ -4,7 +4,7 @@ set imap_user  = "a.cameronbailey@gmail.com"
 
 set folder     = "imaps://imap.gmail.com:993"
 set spool_file = "imaps://imap.gmail.com/INBOX"
-set postponed  = "imaps://imap.gmail.com/[Gmail]/Drafts"
+set postponed  = "imaps://imap.gmail.com/Drafts"
 
 set header_cache = "~/.config/neomutt/cache/headers"
 set message_cachedir = "~/.config/neomutt/cache/bodies"
@@ -16,8 +16,6 @@ set imap_check_subscribed
 set hostname = gmail.com
 
 mailboxes "=INBOX"
-
-set trash = "=[Gmail]/Bin"
 
 set smtp_url = "smtps://a.cameronbailey@smtp.gmail.com"
 set smtp_pass = "msgt acgm wrww xind"
