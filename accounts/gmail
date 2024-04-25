@@ -1,0 +1,43 @@
+set imap_login = ""
+set imap_pass  = "msgt acgm wrww xind"
+set imap_user  = "a.cameronbailey@gmail.com"
+
+set folder     = "imaps://imap.gmail.com:993"
+set spool_file = "imaps://imap.gmail.com/INBOX"
+set postponed  = "imaps://imap.gmail.com/[Gmail]/Drafts"
+
+set header_cache = "~/.config/neomutt/cache/headers"
+set message_cachedir = "~/.config/neomutt/cache/bodies"
+
+set ssl_starttls = yes
+set ssl_force_tls = yes
+
+set imap_check_subscribed
+set hostname = gmail.com
+
+mailboxes "=INBOX"
+
+set trash = "=[Gmail]/Bin"
+
+set smtp_url = "smtps://a.cameronbailey@smtp.gmail.com"
+set smtp_pass = "msgt acgm wrww xind"
+
+# Allow Mutt to open a new IMAP connection automatically.
+unset imap_passive
+
+# Keep the IMAP connection alive by polling intermittently (time in seconds).
+set imap_keepalive = 900
+
+## Hook -- IMPORTANT!
+account-hook $folder "set imap_pass=msgt acgm wrww xind"
+
+set use_from = "yes"
+set record = "+Sent"
+set trash = "+Trash"
+set postponed = "+Drafts"
+set mail_check = 6
+
+# Allow Mutt to open a new IMAP connection automatically.
+unset imap_passive
+
+# vim: syn=neomuttrc
